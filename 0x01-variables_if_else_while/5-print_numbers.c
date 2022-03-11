@@ -8,12 +8,14 @@
 
 int main(void)
 {
-double b, base;
-b = 0;
-b++;
+double b = '0';
+
 /* finding value of log10 */
-base = log10(b);
-printf("log10(%ld) = %ld\n", b, base);
+while (/* condition */b < 10)
+{
+    /* code */
+printf("%d\n", b);
+}
 
 return (0);
 }
