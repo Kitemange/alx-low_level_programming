@@ -11,11 +11,11 @@ int main(void)
 int b = '0';
 
 /* finding value of log10 */
-while (/* condition */b < 10)
+for(/* condition */b = 0; b < 10; b++)
 {
     /* code */
 printf("%d\n", b);
-b++;
+
 }
 
 return (0);
