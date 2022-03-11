@@ -14,7 +14,7 @@ int b = '0';
 for (/* condition */b = 0; b < 10; b++)
 {
     /* code */
-printf("%d\n", b);
+printf("%d", b);
 }
 
 return (0);
