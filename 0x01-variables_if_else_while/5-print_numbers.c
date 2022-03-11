@@ -15,6 +15,7 @@ while (/* condition */b < 10)
 {
     /* code */
 printf("%d\n", b);
+b++;
 }
 
 return (0);
