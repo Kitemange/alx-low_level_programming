@@ -7,7 +7,7 @@
  */
 
 int main () {
-   char ch;
+   char ch='apri';
 
    for(ch = 'a' ; ch <= 'z' ; ch++) {
       putchar(ch);
