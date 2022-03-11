@@ -8,6 +8,12 @@
 
 int main(void)
 {
-double
+double b, base;
+b = 0;
+b++;
+/* finding value of log10 */
+base = log10(b);
+printf("log10(%ld) = %ld\n", b, base);
+
 return (0);
 }
