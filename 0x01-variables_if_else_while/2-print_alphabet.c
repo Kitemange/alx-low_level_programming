@@ -6,15 +6,12 @@
  * Always return(0)
  */
 
-int main(void)
-{
-	char ch='a';
+int main () {
+   char ch;
 
-	if (ch <= 'z')
-	{
-		putchar(ch);
-	}
-    ch++;
-	
-	return (0);
+   for(ch = 'a' ; ch <= 'z' ; ch++) {
+      putchar(ch);
+   }
+   
+   return(0);
 }
