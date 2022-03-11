@@ -16,6 +16,6 @@ for (/* condition */b = 0; b < 10; b++)
     /* code */
 printf("%d", b);
 }
-
+printf('\n');
 return (0);
 }
