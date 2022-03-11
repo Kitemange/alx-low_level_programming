@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Prints a list of numbers
+ * main - alphabet in lowercase, followed by a new line.
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
