@@ -14,9 +14,9 @@ for (ch = 'a'; ch <= 'z'; ch++)
 
 if (ch == 'e' && ch == 'q')
 
-putchar(ch);
+continue;
 
-putchar('\n');
+printf("%c",ch);
 
 return (0);
 }
