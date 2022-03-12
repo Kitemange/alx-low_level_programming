@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * main - finds the last int in a random number
+ * main - print numbers
  *
  * Description: The numbers are generated automatically
  * Return: Always(0) Success
@@ -16,6 +16,7 @@ while (i < 58)
 putchar(i);
 i++;
 }
+putchar('\n');
 
 return (0);
 }
