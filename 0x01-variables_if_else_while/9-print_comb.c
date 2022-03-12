@@ -11,18 +11,16 @@ int main(void)
 {
 	int i;
 
-	for (i = 48; i <= 56; i++)
+	for (i = 48; i < 57; i++)
 	{
 		putchar(i);
 		putchar(',');
 		putchar(' ');
 	}
-	if (/* condition */ i = 57)
+	if (i = 57)
 	{
-		/* code */
 		putchar(i);
 	}
-	
 	putchar('\n');
 
 	return (0);
