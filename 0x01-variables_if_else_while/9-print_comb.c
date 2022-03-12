@@ -17,11 +17,11 @@ int main(void)
 		putchar(',');
 		putchar(' ');
 	}
-	if (i != 59 )
+	if (i != 59)
 	{
 		putchar(57);
 	}
-	
+
 
 	return (0);
 }
