@@ -1,15 +1,16 @@
 #include<stdio.h>
 /**
- * main - prints all single digits to base 10
+ * main - finds the last int in a random number
  *
- * return: always (0) success
+ * Description: The numbers are generated automatically
+ * Return: Always(0) Success
  */
 
 int main(void)
 
 {
 int i = 48;
-while (i<58)
+while (i < 58)
 {
     /* code */
 putchar(i);
