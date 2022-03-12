@@ -1,26 +1,22 @@
-#include <stdio.h>
-
+#include<stdio.h>
 /**
- * main - Print single digit numbers in the formart
+ * main - print numbers
  *
- * Description: Sepaeated by commas
+ * Description: The numbers are generated automatically
  * Return: Always(0) Success
  */
 
 int main(void)
+
 {
-	int i;
+int i = 48;
+while (i < 58)
+{
+    /* code */
+putchar(i);
+i++;
+}
+putchar('\n');
 
-	for (i = 48; i < 58; i++)
-	{
-		putchar(i);
-	}
-	if (i != 57)
-	{
-		putchar(',');
-		putchar(' ');
-	}
-	putchar('\n');
-
-	return (0);
+return (0);
 }
