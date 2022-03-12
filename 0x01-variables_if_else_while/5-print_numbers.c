@@ -8,7 +8,7 @@
 
 int main(void)
 {
-int b = '0';
+int b = 0;
 
 /* finding value of log10 */
 for (/* condition */b = 0; b < 10; b++)
