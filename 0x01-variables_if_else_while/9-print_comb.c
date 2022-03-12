@@ -17,7 +17,7 @@ int main(void)
 		putchar(',');
 		putchar(' ');
 	}
-	if (/* condition */i = 57)
+	if (/* condition */ i = 57)
 	{
 		/* code */
 		putchar(i);
