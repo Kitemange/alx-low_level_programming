@@ -1,21 +1,18 @@
-#include <stdio.h>
-
+#include<stdio.h>
 /**
- * main - alphabet in lowercase, followed by a new line.
- *
- * Return: Always 0 (Success)
+ * main- prints all single digits to base 10
+ * 
+ * return-always (0) success
  */
 
 int main(void)
+
 {
-	int n = 48;
+int i = 0;
+for (i = 0; i < 10; i++)
 
-	while (n < 58)
-	{
-		putchar(n);
-		n++;
-	}
-	putchar ('\n');
+    /* code */
+putchar(i);
 
-	return (0);
+return (0);
 }
