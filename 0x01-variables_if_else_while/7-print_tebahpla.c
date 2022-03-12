@@ -1,22 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - Prints a list of numbers
+ * main - alphabet in lowercase, followed by a new line.
  *
- * Description: The numbers are all single digits
- * Return: Always(0) Success
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char c = 'z';
+char ch = 'z';
 
-	while (c >= 'a')
-	{
-		putchar(c);
-		c--;
-	}
-	putchar('\n');
+while (/* condition */ch >= 'a')
+{
+    /* code */
+putchar(ch);
+ch--;
+}
 
-	return (0);
+putchar('\n');
+
+return (0);
 }
