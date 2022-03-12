@@ -11,10 +11,10 @@ int main(void)
 {
 	int i;
 
-	for (i = 48; i <= 57; i++)
+	for (i = 48; i <= 58; i++)
 	{
 
-		if (i == 57)
+		if (i == 58)
 	{
 		break;
 	}
@@ -23,7 +23,7 @@ int main(void)
 		putchar(',');
 		putchar(' ');
 	}
-	
+
 	putchar('\n');
 
 	return (0);
