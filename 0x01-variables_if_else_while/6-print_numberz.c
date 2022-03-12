@@ -8,11 +8,13 @@
 int main(void)
 
 {
-int i = 0;
-for (i = 0; i < 10; i++)
-
+int i = 48;
+while (i<58)
+{
     /* code */
 putchar(i);
+i++;
+}
 
 return (0);
 }
