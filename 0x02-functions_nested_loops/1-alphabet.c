@@ -4,18 +4,18 @@
 /**
  * print_alphabet - alphabet in lowercase, followed by new line.
  *
- * Return: value provided
+ * Return: no return value
  */
 
 void print_alphabet(void)
 {
-    char al = 'a';
+char al = 'a';
 
-    for (al = 'a'; al <= 'z'; al++)
-    {
+for (al = 'a'; al <= 'z'; al++)
+{
     /* code */
-    putchar(al);
-    }
-    putchar('\n');
-   
+putchar(al);
+}
+putchar('\n');
+
 }
