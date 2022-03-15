@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include "main.h"
 
 /**
  * main - alphabet in lowercase, followed by new line.
