@@ -2,10 +2,12 @@
 #include "main.h"
 
 /**
-* main - prints output
-*
-* return: always (0) success
-*/
+ * main - finds the last int in a random number
+ *
+ * Description: The numbers are generated automatically
+ * Return: Always(0) Success
+ */
+
 
 int main(void)
 {
