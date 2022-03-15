@@ -6,6 +6,7 @@
  * Return: value provided
  */
 
+void print_alphabet(void);
 int main(void)
 {
     char al = 'a';
