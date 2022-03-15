@@ -9,12 +9,12 @@
 
 int _isalpha(int c)
 {
-if(/* condition */c >= 'a' && c <= 'z')
+if (/* condition */c >= 'a' && c <= 'z')
 {
     /* code */
 return (1);
 }
-else if(/* condition */c >= 'A' && c <= 'Z')
+else if (/* condition */c >= 'A' && c <= 'Z')
 {
     /* code */
 return (1);
