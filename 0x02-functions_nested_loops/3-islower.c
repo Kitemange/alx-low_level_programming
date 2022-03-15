@@ -5,7 +5,6 @@
  * _islower - lowercase_letters.
  *
  * Return: 1,0.
- *
  * @c: input sample.
  */
 
