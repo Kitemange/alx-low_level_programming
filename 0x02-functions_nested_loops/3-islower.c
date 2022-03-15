@@ -9,5 +9,12 @@
 
 int _islower(int c)
 {
-return (c >= 'a' && c <= 'z');
+if (/* condition */ c >= 'a' && c <= 'z')
+{
+    /* code */
+    return (1);
+}
+else
+{
+return (0);
 }
