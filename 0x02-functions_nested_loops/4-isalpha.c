@@ -1,21 +1,26 @@
-#include<stdio.h>
 #include "main.h"
 
 /**
- * _isalpha - looks for alphabetic characters.
+ * test_isalpha - Test the _isalpha function
  *
- * return: 1,0.
+ * @n: Number to pass to _isalpha function
  */
+void test_isalpha(int n)
+{
+	int r;
 
-int _isalpha(int c)
-{
-if (/* condition */c >= 'a' && c <= 'z')
-{
-    /* code */
-return (1);
+	r = _isalpha(n);
+	_putchar(r + '0');
+	_putchar('\n');
 }
-else
+
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-return (0);
-}
+	test_isalpha(';');
+	return (0);
 }
