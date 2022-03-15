@@ -1,13 +1,12 @@
 #include<stdio.h>
 #include "main.h"
 /**
- * print_sign - prints number_sign.
+ * print_sign - prints the sign of a num
+ * @n: integer to be tested
  *
- * @n: function.
- *Description: checks signs of numbers
- * return: value,success.
+ * Description: checks signs of numbers
+ * Return: Always(0)
  */
-
 int print_sign(int n)
 {
 if (/* condition */n > 0)
