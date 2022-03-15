@@ -6,7 +6,7 @@
  *
  * Return: 1,0.
  *
- * @c - input sample.
+ * @c: input sample.
  */
 
 int _islower(int c)
