@@ -20,12 +20,12 @@ else if (/* condition */n == 0)
 {
     /* code */
 _putchar('0');
-return (1);
+return (0);
 }
 else
 {
     /* code */
 _putchar('-');
-return (1);
+return (-1);
 }
 }
