@@ -9,18 +9,17 @@
 
 int _isalpha(int c)
 {
-if(/* condition */c >= 'a' && c <= 'z')
+for (c >= 'a'; c <= 'z'; c++)
+{
+    /* code */
+int c = 'A';
+while (/* condition */c <= 'Z')
 {
     /* code */
 return (1);
+c++;
 }
-else if(/* condition */c >= 'A' && c <= 'Z')
-{
-    /* code */
 return (1);
 }
-else
-{
-return (0);
-}
+
 }
