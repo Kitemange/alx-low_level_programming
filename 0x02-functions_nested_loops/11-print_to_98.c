@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_last_digit - prints the lest digit
+ * print_to_98 - prints natural digits
  * @n: first parameter
  *
- * Description: prints the last digit
- * Return: Always (0).
+ * Description: natural digits
+ *
  */
 
 void print_to_98(int n)
