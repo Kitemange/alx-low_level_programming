@@ -8,8 +8,8 @@
  */
 
 int _islower(int c)
-
-if(/* condition */ cha)
+{
+if(/* condition */ c = c)
 {
     /* code */
     return (1);
@@ -17,6 +17,7 @@ if(/* condition */ cha)
 else{
     /* code */
     return (0);
+}
 }
 
 
