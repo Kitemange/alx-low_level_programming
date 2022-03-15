@@ -8,17 +8,8 @@
  */
 
 int _islower(int c)
-
 {
-if(/* condition */ c = 'c')
-{
-    /* code */
-    return (1);
-}
-else{
-    /* code */
-    return (0);
-}
+return (c >= 'a' && c <= 'z');
 }
 
 
