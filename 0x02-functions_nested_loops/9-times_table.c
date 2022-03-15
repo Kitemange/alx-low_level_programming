@@ -8,8 +8,8 @@
  */
 void times_table(void)
 {
-int e,g,d;
-for ( e = 0; e <= 9; e++)
+int e, g, d;
+for (e = 0; e <= 9; e++)
 {
     /* code */
 _putchar('0');
