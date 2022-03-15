@@ -19,9 +19,16 @@ _putchar(' ');
 for (g = 0; g <= 9; g++)
 {
     /* code */
-_putchar('0');
-_putchar(',');
-_putchar(' ');
+d = (e * g);
+if (/* condition */(d / 10) > 0)
+{
+    /* code */
+_putchar((d / 10) + '0');
 }
+else
+{
+    /* code */
 
+}
+}
 }
