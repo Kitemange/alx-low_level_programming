@@ -3,16 +3,16 @@
 
 /**
  * _islower - checks for lowercase character.
- * 
- *return: always success. 
+ *
+ * return: always success.
  */
 
 int _islower(int c)
 {
-if (/* condition */ c >= 'a' && c <= 'z')
+if (c >= 'a' && c <= 'z')
 {
     /* code */
-    return (1);
+return (1);
 }
 else
 {
