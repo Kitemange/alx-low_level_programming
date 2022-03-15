@@ -9,5 +9,5 @@
  */
 int _abs(int n)
 {
-return ('%d\n');
+return (abs(n));
 }
