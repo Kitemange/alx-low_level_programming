@@ -9,7 +9,7 @@
 
 int _isalpha(int c)
 {
-if (/* condition */c >= 'a' && c <= 'z')
+if (/* condition */c >= 'a','A' && c <= 'z','Z')
 {
     /* code */
 return (1);
