@@ -9,14 +9,19 @@
  */
 void jack_bauer(void)
 {
-int i, j;
+int i, g;
 
 	for (i = 0; i < 24; i++)
 	{
-        for (size_t g = 0; g < 60; g++)
+        for (g = 0; g < 60; g++)
         {
             /* code */
         _putchar((i / 10) + '0');
+        _putchar((i % 10) + '0');
+        _putchar(':');
+        _putchar((g / 10) + '0');
+        _putchar((g / 10) + '0');
+        _putchar('\n');
         }
     }
         
