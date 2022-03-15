@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - finds the last int in a random number
+ * main - prints _putchar
  *
  * Description: The numbers are generated automatically
  * Return: Always(0) Success
