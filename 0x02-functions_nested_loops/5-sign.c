@@ -4,7 +4,7 @@
  * print_sign - prints number_sign.
  *
  * @n: function.
- *
+ *Description: checks signs of numbers
  * return: value,success.
  */
 
