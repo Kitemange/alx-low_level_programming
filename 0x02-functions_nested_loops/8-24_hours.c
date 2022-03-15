@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include "main.h"
 /**
- * _abs - computes the absolute value of an integer
+ * jack_bauer - computes the absolute value of an integer
  * @n: integer to be tested
  *
  * Description: computes integer absolute value integer
