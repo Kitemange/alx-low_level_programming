@@ -12,7 +12,7 @@ void print_to_98(int n)
 	{
 		while (n <= 98)
 		{
-			_putchar("%d", n);
+			_putchar(n);
 			if (n != 98)
 			{
 				_putchar(", ");
@@ -24,7 +24,7 @@ void print_to_98(int n)
 	{
 		while (n >= 98)
 		{
-			_putchar("%d", n);
+			_putchar(n);
 			if (n != 98)
 			{
 				_putchar(", ");
