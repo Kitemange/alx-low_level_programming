@@ -28,7 +28,16 @@ _putchar((d / 10) + '0');
 else
 {
     /* code */
-
+_putchar(' ');
 }
+_putchar((d % 10) + '0');
+
+if (g < 9)
+{
+_putchar(',');
+_putchar(' ');   
+}
+}
+_putchar('\n');
 }
 }
