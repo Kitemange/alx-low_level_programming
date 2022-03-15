@@ -11,11 +11,11 @@ int print_last_digit(int n)
 
 {
 int last_digit;
-while (/* condition */last_digit >= 10)
+while (/* condition */n >= 10)
 {
     /* code */
-last_digit = last_digit /10 ;
-return (last_digit);
+last_digit = n /10 ;
+return (n);
 }
 
 
