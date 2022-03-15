@@ -1,22 +1,25 @@
-#include<stdio.h>
 #include "main.h"
+
 /**
- * print_last_digit -  prints the last digit of a number
- * @int: integer to be tested
+ * print_last_digit - prints the lest digit
+ * @n: first parameter
  *
- * Description:  prints the last digit of a number
- * Return: Always(0)
+ * Description: prints the last digit
+ * Return: Always (0).
  */
+
 int print_last_digit(int n)
-
 {
-int last_digit;
-while (/* condition */last_digit = n % 10)
-{
-    /* code */
-last_digit = n /10 ;
-return (0);
-}
+	int last_digit;
 
+	last_digit = n % 10;
 
+	if (last_digit < 0)
+	{
+		last_digit *= -1;
+	}
+
+	_putchar(last_digit + '0');
+
+	return (last_digit);
 }
