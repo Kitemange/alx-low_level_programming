@@ -1,10 +1,11 @@
 #include<stdio.h>
 #include "main.h"
 /**
- * print_sign - prints the sign of a number.
+ * print_sign: prints the sign of a number.
+ * 
  * @n: function.
  *
- * return: value,success. 
+ * return: value,success.
  */
 
 int print_sign(int n)
