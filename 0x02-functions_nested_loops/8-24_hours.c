@@ -16,12 +16,12 @@ int i, g;
         for (g = 0; g < 60; g++)
         {
             /* code */
-        _putchar((i / 10) + '0');
-        _putchar((i % 10) + '0');
-        _putchar(':');
-        _putchar((g / 10) + '0');
-        _putchar((g / 10) + '0');
-        _putchar('\n');
+            _putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
+			_putchar('\n');
         }
     }
         
