@@ -5,7 +5,6 @@
  * _isalpha - check for alpha characters.
  *
  * @c: area input;
- * 
  * Return: 1,0;
  */
 
