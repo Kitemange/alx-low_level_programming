@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * _isalpha - looks for alphabetic characters.
+ * _isalpha - check for alpha characters.
  *
- * return: 1,0.
+ * Return: 1,0;
  */
 
 int _isalpha(int c)
