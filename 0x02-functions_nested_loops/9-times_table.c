@@ -23,7 +23,7 @@ d = (e * g);
 if (/* condition */(d / 10) > 0)
 {
     /* code */
-_putchar((d / 10) + '0');
+_putchar(d / 10);
 }
 else
 {
