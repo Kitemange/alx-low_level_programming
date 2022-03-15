@@ -4,6 +4,7 @@
 /**
  * _isalpha - check for alpha characters.
  *
+ * int c: area input;
  * Return: 1,0;
  */
 
