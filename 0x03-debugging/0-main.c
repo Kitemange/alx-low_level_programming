@@ -1,21 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
-* main - positive_or_negative
-*@n:input
-* Return: Always 0 (Success)
-*/
+ * main - tests function that prints if integer is positive or negative
+ * Return: 0
+ */
 
-int main(int n)
+
+int main(void)
 {
+	int i;
 
-	n = 0;
+	i = 0;
+	positive_or_negative(i);
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-
-	positive_or_negative(n);
 	return (0);
 }
