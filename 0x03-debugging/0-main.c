@@ -4,7 +4,7 @@
 
 /**
 * main - positive_or_negative
-*
+*@n:input
 * Return: Always 0 (Success)
 */
 
