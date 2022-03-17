@@ -1,4 +1,5 @@
 int main(void);
+void print_numbers();
 
 int _isupper(int c);
 
