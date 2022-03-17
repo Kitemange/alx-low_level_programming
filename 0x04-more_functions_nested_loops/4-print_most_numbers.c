@@ -11,16 +11,16 @@ void print_most_numbers(void)
 {
 int i;
 
-for (i = 0; i <= 9; i++)
+i = 0;
+while (/* condition */i <= 9)
 {
-if (i == 2 || i == 4)
+    /* code */
+if (i != 2 && i != 4)
 {
-continue;
-}
-else
-{
+    /* code */
 _putchar(i + '0');
 }
+i++;
 }
 _putchar('\n');
 }
