@@ -2,7 +2,10 @@
 #include "main.h"
 
 /**
- * @brief 
+ * @c: upper_case letter.
+ * _isupper -prints uppercase letters.
+ * 
+ * return -1,0.
  * 
  */
 
@@ -17,9 +20,5 @@ int _isupper(int c)
     {
         /* code */
         return (1);
-    }
-    
-    
-    
-    
+    }   
 }
