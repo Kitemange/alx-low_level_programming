@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * @c: check_digit.
- * _isdigit -prints digits 0-9.
+ * void: check_digit.
+ * print_numbers -prints digits 0-9.
  * 
  * return - 1,0.
  * 

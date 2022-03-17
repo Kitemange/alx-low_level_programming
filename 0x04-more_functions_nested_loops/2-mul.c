@@ -4,7 +4,7 @@
 /**
  * @a: integer 1.
  * @b: integer 2.
- * _isdigit -prints digits 0-9.
+ * mul -multiply 2_digits.
  * 
  * return - Always 0.
  * 
