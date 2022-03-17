@@ -15,7 +15,7 @@ int i = 0;
 while (/* condition */i <= 9)
 {
     /* code */
-_putchar('i');
+_putchar(i + '0');
 i++;
 }
 _putchar('\n');
