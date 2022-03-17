@@ -4,6 +4,7 @@
 /**
  * void: check_digit.
  * print_numbers -prints digits 0-9.
+ * Description: prints the numbers, from 0 to 9, followed by a new line
  * 
  * return - 1,0.
  * 
