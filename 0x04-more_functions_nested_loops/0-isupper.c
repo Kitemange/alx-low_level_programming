@@ -8,12 +8,18 @@
 
 int _isupper(int c)
 {
-    for ( c = 'A'; c < 'Z'; c++)
+    if (/* condition */c <= 'A' && c >= 'Z')
     {
         /* code */
         return (1);
     }
-    return (0);
+    else
+    {
+        /* code */
+        return (1);
+    }
+    
+    
     
     
 }
