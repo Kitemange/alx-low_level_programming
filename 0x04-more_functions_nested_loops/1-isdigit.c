@@ -11,7 +11,7 @@
 
 int _isdigit(int c)
 {
-if (/* condition */c >= 0 && c <= 9)
+if (/* condition */c >= 48 && c <= 57)
 {
     /* code */
 return (1);
