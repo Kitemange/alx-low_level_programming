@@ -19,6 +19,6 @@ return (1);
 else
 {
         /* code */
- return (1);
+ return (0);
 }   
 }
