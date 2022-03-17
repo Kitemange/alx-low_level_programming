@@ -16,6 +16,7 @@ while (/* condition */i <= 9)
 {
     /* code */
 _putchar('i');
+i++;
 }
 _putchar('\n');
 }
