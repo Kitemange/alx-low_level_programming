@@ -1,5 +1,6 @@
 int main(void);
-void print_numbers();
+
+int _putchar(char c);
 
 int _isupper(int c);
 
