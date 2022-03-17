@@ -3,8 +3,7 @@
 
 /**
  * @c: upper_case letter.
- * _isupper -prints uppercase letters.
- * 
+ * _isupper -prints uppercase letters
  * return -1,0.
  * 
  */
@@ -21,5 +20,4 @@ else
         /* code */
 return (0);
 }
-   
 }
