@@ -2,7 +2,7 @@
 
 /**
  * print_most_numbers - print most numbers
- *
+ *void-prit,
  * Description: prints the numbers, from 0 to 9, followed by a new line
  * Return: Alaways (0)
  */
