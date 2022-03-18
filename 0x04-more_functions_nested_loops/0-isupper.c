@@ -4,8 +4,7 @@
 /**
  * @c: upper_case letter.
  * _isupper -prints uppercase letters
- * return -1,0.
- * 
+ * return -1,0. 
  */
 
 int _isupper(int c)
@@ -13,11 +12,11 @@ int _isupper(int c)
 if (/* condition */c >= 'A' && c <= 'Z')
 {
         /* code */
-return (1);
+        return (1);
 }
 else
 {
         /* code */
-return (0);
+        return (0);
 }
 }
