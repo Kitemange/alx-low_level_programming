@@ -14,12 +14,12 @@ int _isupper(int c)
 {
 if (/* condition */c >= 'A' && c <= 'Z')
 {
-        /* code */
-        return (1);
+/* code */
+return (1);
 }
 else
 {
-        /* code */
-        return (0);
+/* code */
+ return (0);
 }
 }
