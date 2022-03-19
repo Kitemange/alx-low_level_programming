@@ -11,11 +11,11 @@ void more_numbers(void)
 {
 	int n, i;
 
-	for (n = 0; n <= 24; n++)
+	for (n = 0; n <= 10; n++)
 	{
-		for (i = 0; i <= 10; i++)
+		for (i = 0; i <= 14; i++)
 		{
-			if (i >= 10)
+			if (i >= 14)
 			{
 				_putchar(i / 10 + '0');
 			}
