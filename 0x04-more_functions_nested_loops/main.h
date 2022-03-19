@@ -22,4 +22,3 @@ void print_square(int size);
 
 void print_triangle(int size);
 
-100-prime_factor.c
