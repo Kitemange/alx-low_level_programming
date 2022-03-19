@@ -2,10 +2,13 @@
 #include "main.h"
 
 /**
- * @c: upper_case letter.
- * _isupper -prints uppercase letters
- * return -1,0. 
+ * _isupper - prints 1 or 0 depending on input
+ * @c: input type variable
+ *
+ * Description: checks for uppercase letters
+ * Return: Aways (0).
  */
+
 
 int _isupper(int c)
 {
