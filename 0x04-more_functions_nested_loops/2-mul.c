@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * @a: integer 1.
- * @b: integer 2.
- * mul -multiply 2_digits.
+ * mul - int mul(int a, int b)
+ * @a: first input value
+ * @b: second input value
  *
- * return - Always 0.
- *
+ * Description: multiplies two integers
+ * Return: Always (0).
  */
 
 int mul(int a, int b)
