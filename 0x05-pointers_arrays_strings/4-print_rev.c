@@ -12,23 +12,18 @@
 
 void print_rev(char *s)
 {
-	int l, i, *d, *e, t;
+	int left, len, i;
 
-	l = str_len(s);
-	d = s;
-	e = s;
+	len = 0;
+	left = 0;
 
-	for (i = 0; i < l; i++)
-	e++;
-
-	for (i = 0; i < l/2; i++)
+	for (i = 0; s[i] != '\0'; ++i)
 	{
-		/* code */
-		t = *e;
-		*e = *d;
-		*d = t;
-
-		s++;
-		e--;
+		len = i;
 	}
+	for (; len >= left; len--)
+	{
+		_putchar(s[len]);
+	}
+	_putchar('\n');
 }
