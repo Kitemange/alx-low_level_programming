@@ -3,19 +3,18 @@
 int puts(const char *str);
 
 /**
- * _puts - prints a string followed by a new line..
+ * _puts - put string
+ * @str: first parameter
  *
- *@str: the string to print.
- *
+ * Description: prints a string
+ * Return: Alwalys (0)
  */
 
 void _puts(char *str)
 {
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
+	while (*str != '\0')
 	{
-		_putchar(str[i]);
+		puts(str);
 	}
-	_putchar('\n');
+
 }
