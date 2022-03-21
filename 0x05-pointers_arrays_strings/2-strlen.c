@@ -3,13 +3,12 @@
 #include<string.h>
 
 /**
- * @s: string length
- * _strlen: returns the length of a string.
+ * _strlen - returns lenght of string
+ * @s: input parameter
  *
- * Description - function that returns the length of a string.
- * return: always(0).
+ * Description: uses pointers
+ * Return: Alawy (0)
  */
-
 int _strlen(char *s)
 {
 int l;
