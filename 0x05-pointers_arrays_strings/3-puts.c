@@ -1,5 +1,6 @@
 #include "main.h"
 #include<stdio.h>
+int puts(const char *str);
 
 /**
  * _puts - put string
