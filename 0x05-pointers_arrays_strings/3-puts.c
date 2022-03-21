@@ -11,7 +11,7 @@
 
 void _puts(char *str)
 {
-while (/* condition */str != '\0')
+while (/* condition */*str != '\0')
 {
     /* code */
 _putchar(*str);
