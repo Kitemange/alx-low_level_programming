@@ -12,10 +12,10 @@
 
 void print_rev(char *s)
 {
-	int l, i, *s, *e, t;
+	int l, i, *d, *e, t;
 
 	l = str_len(s);
-	s = s;
+	d = s;
 	e = s;
 
 	for (i = 0; i < l; i++)
@@ -25,8 +25,8 @@ void print_rev(char *s)
 	{
 		/* code */
 		t = *e;
-		*e = *s;
-		*s = t;
+		*e = *d;
+		*d = t;
 
 		s++;
 		e--;
