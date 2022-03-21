@@ -1,21 +1,19 @@
 #include "main.h"
-#include <stdio.h>
-#include<string.h>
 
 /**
- * _puts - prints a string
- * @str: input parameter
+ * _puts - put string
+ * @str: first parameter
  *
  * Description: prints a string
+ * Return: Alwalys (0)
  */
 
 void _puts(char *str)
 {
-while (/* condition */*str != '\0')
-{
-    /* code */
-_putchar(*str);
-str++;
-}
-_putchar('\n');
+	while (*str != '\0')
+	{
+		_putchar(*str);
+		str++;
+	}
+	_putchar('\n');
 }
