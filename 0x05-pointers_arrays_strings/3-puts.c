@@ -12,7 +12,7 @@ int puts(const char *str);
 
 void _puts(char *str)
 {
-	int i;
+	int i = 'a';
 
 	while (str[i] != '\0')
 	{
