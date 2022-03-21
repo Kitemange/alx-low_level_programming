@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include<string.h>
 
 /**
  * @s:string
@@ -13,7 +14,10 @@ int _strlen(char *s)
 {
     int l;
 
-    l = strlen(*s);
-    _putchar('l');
-return (0);
+for (l = 0; s[l] != '\0'; l++)
+	{
+		continue;
+	}
+
+	return (l);
 }
