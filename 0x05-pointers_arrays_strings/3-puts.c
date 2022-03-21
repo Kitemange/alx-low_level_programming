@@ -11,10 +11,10 @@
 
 void _puts(char *str)
 {
-	int puts(const char *str);
 	while (*str != '\0')
 	{
-		puts(*str);
+		int puts(const char *str);
+		puts('*str');
 		str++;
 	}
 }
