@@ -18,5 +18,5 @@ void _puts(char *str)
 		/* code */
 		continue;
 	}
-return (0);	
+
 }
