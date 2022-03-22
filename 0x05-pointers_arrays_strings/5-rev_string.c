@@ -20,9 +20,9 @@ void rev_string(char *s)
 		if (j > i)
 		{
 			/* code */
-			v1 = s[i];
-			s[i] = s[j];
-			s[j] = v1;
+			v1 = s[j];
+			s[j] = s[i];
+			s[i] = v1;
 			j--;
 			i++;
 		}
