@@ -16,7 +16,7 @@ int l, length = 0;
 for (l = 0; s[l] != '\0'; l++)
 {
 	/* code */
-	continue;
+	length++;
 }
 
 return (length);
