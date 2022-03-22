@@ -17,7 +17,7 @@ void rev_string(char *s)
 	}
 		j = length - 1;
 		i = 0;
-		if (i > j)
+		if (j > i)
 		{
 			/* code */
 			v1 = s[i];
