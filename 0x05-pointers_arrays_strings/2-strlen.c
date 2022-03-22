@@ -11,13 +11,13 @@
  */
 int _strlen(char *s)
 {
-int l;
+int l, length = 0;
 
-for (l = 0; s[l] != '\0'; ++l)
+for (l = 0; s[l] != '\0'; l++)
 {
 	/* code */
 	continue;
 }
 
-return (1);
+return (length);
 }
