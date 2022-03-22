@@ -12,9 +12,10 @@ int puts(const char *str);
 
 void _puts(char *str)
 {
-	while (*str != '\0')
+	int i;
+	while (str[i] != '\0')
 	{
-		puts(str);
+		puts(str[i]);
 	}
 
 }
