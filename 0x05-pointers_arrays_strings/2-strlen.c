@@ -17,6 +17,7 @@ while (/* condition */s[l] != '\0')
 {
 	/* code */
 	continue;
+	l++;
 }
 
 return (l);
