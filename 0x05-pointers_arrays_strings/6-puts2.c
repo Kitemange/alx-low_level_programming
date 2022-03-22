@@ -17,8 +17,8 @@ void puts2(char *str)
 			/* code */
 			_putchar(str[i]);
 		}
-		
+
 	}
-	
+
 	_putchar('\n');
 }
