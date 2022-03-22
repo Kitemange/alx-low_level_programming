@@ -14,9 +14,10 @@ void rev_string(char *s)
 
 	for (length = 0; s[length] != '\0'; length++)
 	{
+	}
 		j = length - 1;
 		i = 0;
-		for (;i > j; i++)
+		for (; i > j; i++)
 		{
 			/* code */
 			v1 = s[i];
@@ -24,5 +25,4 @@ void rev_string(char *s)
 			s[j] = v1;
 			j--;
 		}
-	}
 }
