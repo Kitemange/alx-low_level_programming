@@ -11,13 +11,12 @@
  */
 int _strlen(char *s)
 {
-int l = 0;
+int l;
 
-while (/* condition */s[l] != '\0')
+for (l = 0; s[l] != '\0'; l++)
 {
 	/* code */
 	continue;
-	l++;
 }
 
 return (0);
