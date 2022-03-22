@@ -16,7 +16,7 @@ int l = 0;
 while (/* condition */s[l] != '\0')
 {
 	/* code */
-	_putchar(l);
+	continue;
 }
 
 return (l);
