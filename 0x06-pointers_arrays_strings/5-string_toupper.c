@@ -15,7 +15,7 @@ char *string_toupper(char *s)
 	{
 		/* code */
 		i++;
-		if (/* condition */s[i] > 'a' && s[i] < 'z')
+		if (/* condition */s[i] >= 'a' && s[i] <= 'z')
 		{
 			/* code */s[i] -= 32;
 		}
