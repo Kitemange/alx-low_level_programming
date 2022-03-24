@@ -9,17 +9,16 @@
 
 char *string_toupper(char *s)
 {
-	int i;
+	int i = 0;
 
-	do
+	while (s[i] != '\0')
 	{
-		/* code */
-		i++;
-		if (/* condition */s[i] >= 96 && s[i] <= 123)
+		if (s[i] > 96 && s[i] < 123)
 		{
-			/* code */s[i] -= 32;
+			s[i] -= 32;
 		}
-		
-	} while (/* condition */s[i] != '\0');
+		i++;
+	}
+
 	return (s);
 }
