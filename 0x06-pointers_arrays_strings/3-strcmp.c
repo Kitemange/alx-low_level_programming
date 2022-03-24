@@ -1,10 +1,9 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
  * _strcmp - compare two strings.
- * @s1:
+ *@s1: string 1.
+ *@s2: string 2.
  *Description: the function compares two strings
  *Return: character count
  */
