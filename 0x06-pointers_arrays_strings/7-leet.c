@@ -8,17 +8,17 @@
 
 char *leet(char *s)
 {
-	int i = 0, j = 0;
-	char array_leet[] = {'4', '3', '1', '0', '7'};
-	char array_up[] = {'A', 'E', 'L', 'O', 'T'};
-	char array_low[] = {'a', 'e', 'l', 'o', 't'};
+	int i = 0, j;
+	char encode[] = {'4', '3', '1', '0', '7'};
+	char U_letters[] = {'A', 'E', 'L', 'O', 'T'};
+	char L_letters[] = {'a', 'e', 'l', 'o', 't'};
 
 	while (s[i] != '\0')
 	{
 		for (j = 0; j < 5; j++)
 		{
-			if (s[i] == array_low[j] || s[i] == array_up[j])
-				s[i] = array_leet[j];
+			if (s[i] == L_letters[j] || s[i] == U_letters[j])
+				s[i] = encode[j];
 		}
 		i++;
 	}
