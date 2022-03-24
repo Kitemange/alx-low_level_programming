@@ -4,7 +4,8 @@
  * _strcmp - compare two strings.
  *@s1: string 1.
  *@s2: string 2.
- *Return: int.
+ *Description: the function compares two strings
+ *Return: character count
  */
 
 int _strcmp(char *s1, char *s2)
