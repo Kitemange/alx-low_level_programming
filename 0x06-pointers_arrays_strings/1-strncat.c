@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-//#include "main.h"
+#include "main.h"
 
 /**
  * *_strcpy - copies the string pointed to by src, including \0.
@@ -9,22 +9,27 @@
  *Return: the pointer to dest.
  */
 
-int main(void)
+char *_strncat(char *dest, char *src, int n)
 {
-	int i, l;
-	char dest[] = "Prompt user ";
-	char str[] = "for password";
+	int i = 0, j = 0;
 
-	printf("First string: %s\n", dest);
-    printf("Second string: %s\n", str);
-
-	for (i = 0; i < l && dest[i] != '\0'; i++)
+	do
 	{
 		/* code */
-		str + 1;
-		strcat(dest, str);
-		printf("First string: %s\n", dest);
+		i++;
+		j++;
+		
+	} while (/* condition */dest[i] != '\0');
+	for (; src[j] != '\0'; j++)
+	{
+		/* code */
+		dest[i] = src[j];
+		j++;
 	}
-	
-	
+	if (/* condition */n > 0)
+	{
+		/* code */
+		dest[i] ='\0';
+	}
+	return (dest);
 }
