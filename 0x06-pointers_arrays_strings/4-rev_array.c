@@ -15,9 +15,9 @@ void reverse_array(int *a, int n)
 	do
 	{
 		/* code */
-		temp = f;
-		f = l;
-		l = temp;
+		temp = a[f];
+		a[f] = a[l];
+		a[l] = temp;
 		f++;
 		l--;
 	} while (/* condition */f < n / 2);
