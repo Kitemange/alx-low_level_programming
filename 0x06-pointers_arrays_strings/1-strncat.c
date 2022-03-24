@@ -17,13 +17,12 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		/* code */
 		i++;
-		j++;
-		
 	} while (/* condition */dest[i] != '\0');
 	for (; src[j] != '\0'; j++)
 	{
 		/* code */
 		dest[i] = src[j];
+		i++;
 		j++;
 	}
 	if (/* condition */n > 0)
