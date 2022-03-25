@@ -13,8 +13,7 @@ char *_strcat(char *dest, char *src)
 {
 	int i, l = 0;
 	
-	do
-	{
+	do{
 		/* code */
 		l++;
 	}
