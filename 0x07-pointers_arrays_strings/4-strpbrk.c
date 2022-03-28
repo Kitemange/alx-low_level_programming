@@ -33,11 +33,11 @@ char *_strpbrk(char *s, char *accept)
 					p = j;
 					f = 1;
 				}
-				
+
 			}
-			
+
 		}
-		
+
 	}
 	if (f == 1)
 	{
