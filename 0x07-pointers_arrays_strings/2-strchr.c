@@ -12,7 +12,20 @@
 
 char *_strchr(char *s, char c)
 {
-
-	
-	return (0);
+	while (/* condition */*s)
+	{
+		/* code */
+		if (/* condition */c == *s)
+		{
+			/* code */
+			return (s);
+		}
+		s++;
+	}
+	if (/* condition */!c)
+	{
+		/* code */
+		return (s);
+	}	
+	return (NULL);
 }
