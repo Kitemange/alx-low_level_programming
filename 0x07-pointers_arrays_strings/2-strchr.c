@@ -26,6 +26,6 @@ char *_strchr(char *s, char c)
 	{
 		/* code */
 		return (s);
-	}	
+	}
 	return (NULL);
 }
