@@ -12,6 +12,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
+	char c;
 	if (/* condition */s == NULL || accept == NULL)
 	{
 		/* code */
@@ -20,6 +21,7 @@ char *_strpbrk(char *s, char *accept)
 	while (/* condition */*s)
 	{
 		/* code */
+		c = 
 		if (/* condition */)
 		{
 			/* code */
