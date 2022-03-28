@@ -14,17 +14,14 @@ char *_strchr(char *s, char c)
 {
 	while (/* condition */*s)
 	{
-		/* code */
 		if (/* condition */c == *s)
 		{
-			/* code */
 			return (s);
 		}
 		s++;
 	}
 	if (/* condition */!c)
 	{
-		/* code */
 		return (s);
 	}
 
