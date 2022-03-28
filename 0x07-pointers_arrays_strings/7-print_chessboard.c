@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_chessboard - print chessboard
@@ -9,3 +9,6 @@
  */
 
 void print_chessboard(char (*a)[8])
+{
+
+}
