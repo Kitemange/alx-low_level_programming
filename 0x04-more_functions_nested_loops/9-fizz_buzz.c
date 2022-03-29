@@ -9,32 +9,31 @@
 
 int main(void)
 {
-    int i;
-    for (i = 0; i <= 100; i++)
-    {
-        /* code */ 
-        if (/* condition */i % 3 == 0)
-        {
-            /* code */
-            printf("Fizz ");
-        }
-        else if (/* condition */i % 5 == 0)
-        {
-            /* code */
-            printf("Buzz ");
-        }
-        else if (/* condition */i % 15 == 0)
-        {
-            /* code */
-            printf("FizzBuzz ");
-        }
-        else
-        {
-            /* code */
-            printf("%i ",i);
-        }
-    }        
-        printf('\n');
-        return (0);
-    }
-    
+	int i;
+	for (i = 0; i <= 100; i++)
+	{
+		/* code */
+		if (/* condition */i % 3 == 0)
+		{
+			/* code */
+			printf("Fizz ");
+		}
+		else if (/* condition */i % 5 == 0)
+		{
+			/* code */
+			printf("Buzz ");
+		}
+		else if (/* condition */i % 15 == 0)
+		{
+			/* code */
+			printf("FizzBuzz ");
+		}
+		else
+		{
+			/* code */
+			printf("%i ",i);
+		}
+	}
+		return (0);
+	}
+
