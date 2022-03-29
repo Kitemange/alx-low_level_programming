@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * _memset - fill memory
+ * *_memset - fill memory
  * @s: input string
  * @b: input character
  * @n: input size
  *
- * Description: fills memory with a constant byte
+ * description: fills memory with a constant byte
  * Return: returns a pointer to the memory area s
  */
 
