@@ -10,6 +10,7 @@
 int main(void)
 {
 	int i;
+
 	for (i = 0; i <= 100; i++)
 	{
 		/* code */
@@ -31,7 +32,7 @@ int main(void)
 		else
 		{
 			/* code */
-			printf("%i ",i);
+			printf("%i ", i);
 		}
 	}
 		return (0);
