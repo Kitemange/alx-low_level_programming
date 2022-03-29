@@ -28,7 +28,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (accept[i] == s[j])
 			{
-				if(j < p)
+				if (j < p)
 				{
 					p = j;
 					f = 1;
@@ -41,7 +41,7 @@ char *_strpbrk(char *s, char *accept)
 	}
 	if (f == 1)
 	{
-		return &s[p];
+		return (&s[p]);
 	}
 	else
 	{
