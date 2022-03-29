@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _memset - fill memory
+ * *_strchr - fill memory
  * @s: string1
  * @c: input size
  *

@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * *_memscpy - fill memory
+ * *_memcpy - fill memory
  * @dest: string1
  * @src: string2
  * @n: input size
