@@ -19,7 +19,7 @@ int main(void)
 			/* code */
 			printf("FizzBuzz ");
 		}
-		
+
 		else if (/* condition */i % 3 == 0)
 		{
 			/* code */
