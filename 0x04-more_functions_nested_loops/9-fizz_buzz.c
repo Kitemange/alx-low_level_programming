@@ -14,7 +14,13 @@ int main(void)
 	for (i = 1; i <= 100; i++)
 	{
 		/* code */
-		if (/* condition */i % 3 == 0)
+		if (/* condition */i % 15 == 0)
+		{
+			/* code */
+			printf("FizzBuzz ");
+		}
+		
+		else if (/* condition */i % 3 == 0)
 		{
 			/* code */
 			printf("Fizz ");
@@ -23,11 +29,6 @@ int main(void)
 		{
 			/* code */
 			printf("Buzz ");
-		}
-		else if (/* condition */i % 15 == 0)
-		{
-			/* code */
-			printf("FizzBuzz ");
 		}
 		else
 		{
