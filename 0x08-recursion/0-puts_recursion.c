@@ -11,7 +11,7 @@
 
 void _puts_recursion(char *s)
 {
-	if (/* condition */*s ==  '\0')
+	if (/* condition */*s == '\0')
 	{
 		/* code */
 		_putchar('\n');
