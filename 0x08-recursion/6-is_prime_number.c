@@ -21,7 +21,7 @@ int is_prime(int i, int j)
 }
 
  /**
-  * is_prime_number - printing prime numbers
+  * is_prime_number - checks if a number is prime
   * @n: input integer value
   *
   * Description: returns 1 if the input integer is a
