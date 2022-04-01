@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
- *
- * @argc: Counts the number of parameters that go into main
- * @argv: Pointer of array of pointers containing strings entering main
- * Return: Always 0 (Success)
+ * main - adds all positive numbers and prints it
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 0 for success
  */
+
 int main(int argc, char const *argv[])
 {
 	int i, k = 0;
