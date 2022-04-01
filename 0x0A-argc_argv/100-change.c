@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 2 || n < 0)
 		return (printf("Error\n"), 1);
-	
+
 	printf("%d\n", calculate_cents(n));
 	return (0);
 }
