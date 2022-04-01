@@ -12,16 +12,17 @@
 
 int main(int argc, char *argv[])
 {
-	int i ,j, mul;
-    mul = i * j;
+	int i, j, k, mul;
+    
 
 	/* code */
 	for (i = 0; i < argc; i++)
 	{       
-		i = atoi(argv[1]);
+		k = atoi(argv[1]);
         j = atoi(argv[2]);
 	}
-    printf("%s\n",mul);
+    mul = k * j;
+    printf("%d\n",mul);
 
 	return 0;
 }
