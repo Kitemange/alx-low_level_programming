@@ -5,7 +5,6 @@
  * main - prints number of arguments
  * @argc: first parameter
  * @argv: second parameter
- * @i: Integer 1.
  *
  * Description: prints number of arguments
  * Return: 0 for code success
