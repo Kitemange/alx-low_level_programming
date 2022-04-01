@@ -1,15 +1,14 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - prints number of arguments
+ * main - prints all arguments
  * @argc: first parameter
  * @argv: second parameter
  *
- * Description: prints number of arguments
- * Return: 0 for code success
+ * Description: prints all arguments it receives
+ * Return: Always(0) Success
  */
-
 
 int main(int argc, char *argv[])
 {
