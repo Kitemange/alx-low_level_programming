@@ -16,6 +16,12 @@ int main(int argc, char *argv[])
     
 
 	/* code */
+    if (argc != 3)
+    {
+        /* code */
+        return (printf("error\n"), 1);
+    }
+    
 	for (i = 0; i < argc; i++)
 	{       
 		k = atoi(argv[1]);
