@@ -13,22 +13,22 @@
 int main(int argc, char *argv[])
 {
 	int i, j, k, mul;
-    
+
 
 	/* code */
-    if (argc != 3)
-    {
-        /* code */
-        return (printf("error\n"), 1);
-    }
-    
-	for (i = 0; i < argc; i++)
-	{       
-		k = atoi(argv[1]);
-        j = atoi(argv[2]);
+	if (argc != 3)
+	{
+		/* code */
+		return (printf("error\n"), 1);
 	}
-    mul = k * j;
-    printf("%d\n",mul);
+
+	for (i = 0; i < argc; i++)
+	{
+		k = atoi(argv[1]);
+		j = atoi(argv[2]);
+	}
+	mul = k * j;
+	printf("%d\n",mul);
 
 	return 0;
 }
