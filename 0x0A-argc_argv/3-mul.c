@@ -2,33 +2,24 @@
 #include <stdlib.h>
 
 /**
- * main - prints all arguments
- * @argc: first parameter
- * @argv: second parameter
+ * main - Entry point
  *
- * Description: prints all arguments it receives
- * Return: Always(0) Success
+ * @argc: Counts the number of parameters that go into main
+ * @argv: Pointer of array of pointers containing strings entering main
+ * Return: Always 0 (Success)
  */
-
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
-	int i, j, k, mul;
+	int n;
 
-
-	/* code */
 	if (argc != 3)
 	{
-		/* code */
-		return (printf("error\n"), 1);
+		return(printf("%s\n", "Error"), 1);
 	}
-
-	for (i = 0; i < argc; i++)
+	else
 	{
-		k = atoi(argv[1]);
-		j = atoi(argv[2]);
+		n = atoi(argv[1]) * atoi(argv[2]);
+		printf("%i\n", n);
 	}
-	mul = k * j;
-	printf("%d\n",mul);
-
-	return 0;
+	return (0);
 }
