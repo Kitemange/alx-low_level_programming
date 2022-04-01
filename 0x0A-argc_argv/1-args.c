@@ -15,10 +15,11 @@ int main(int argc, char *argv[])
 {
 	/* code */
 	int i;
-	printf("argc = %d\n",argc);
 
 	for (i = 0; i < argc; i++)
-		printf("argv[%d] : %s",i, argv[i]);
+		*argv[i] = *argv[i];
+	
+	printf("%d\n",(i -1));
 
 	return 0;
 }
