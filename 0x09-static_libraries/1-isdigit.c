@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include "main.h"
 
 /**
@@ -11,14 +10,5 @@
 
 int _isdigit(int c)
 {
-if (/* condition */c >= 48 && c <= 57)
-{
-    /* code */
-return (1);
-}
-else
-{
-    /* code */
-return (0);
-}
+	return (c >= '0' && c <= '9');
 }

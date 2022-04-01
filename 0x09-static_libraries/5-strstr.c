@@ -13,30 +13,25 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	   int i;
+	char *first, *compare;
 
-if (!needle)
-{
-return (haystack);
-}
-while (*haystack != '\0')
-{
-i = 0;
-
-while (*haystack != *needle && *haystack != '\0')
-{
-haystack++;
-
-while (haystack[i] == needle[i] && haystack[i] != '\0')
-{
-i++;
-}
-if (needle[i] == '\0')
-{
-return (haystack);
-}
-}
-haystack++;
-}
-return  (0);
+	while (*haystack)
+	{
+		first = haystack;
+		compare = needle;
+		while (*haystack && *compare && *haystack == *compare)
+		{
+			haystack++;
+			compare++;
+		}
+		if (!*compare)
+		{
+			return (first);
+		}
+		else
+		{
+			haystack = first + 1;
+		}
+	}
+	return (NULL);
 }

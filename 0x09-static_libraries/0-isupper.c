@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include "main.h"
 
 /**
@@ -9,17 +8,7 @@
  * Return: Aways (0).
  */
 
-
 int _isupper(int c)
 {
-if (/* condition */c >= 'A' && c <= 'Z')
-{
-/* code */
-return (1);
-}
-else
-{
-/* code */
-return (0);
-}
+	return (c >= 'A' && c <= 'Z');
 }

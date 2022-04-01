@@ -1,29 +1,29 @@
-#include <string.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
- * *_strchr - fill memory
- * @s: string1
- * @c: input size
+ * _strchr - locates a character
+ * @s: input string
+ * @c: input character
  *
  * Description: locates a character in a string
- * Return: returns the memory area.
+ * Return: returns a ptr to the 1st occurrence of
+ * the char c in str s, else, return NULL
  */
 
 char *_strchr(char *s, char c)
 {
-	while (/* condition */*s)
+	while (*s)
 	{
-		if (/* condition */c == *s)
+		if (c == *s)
 		{
 			return (s);
 		}
 		s++;
 	}
-	if (/* condition */!c)
+	if (!c)
 	{
 		return (s);
 	}
-
 	return (NULL);
 }

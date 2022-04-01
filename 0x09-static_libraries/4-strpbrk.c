@@ -12,39 +12,34 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j, p, f;
-
-	f = 0;
+	int i, j, len, exist = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
+		continue;
 	}
-
-	p = i;
-
+	len = i;
 	for (i = 0; accept[i] != '\0'; i++)
 	{
 		for (j = 0; s[j] != '\0'; j++)
 		{
 			if (accept[i] == s[j])
 			{
-				if (j < p)
+				if (j <= len)
 				{
-					p = j;
-					f = 1;
+					len = j;
+					exist = 1;
 				}
-
 			}
-
 		}
-
 	}
-	if (f == 1)
+	if (exist == 1)
 	{
-		return (&s[p]);
+		return (&s[len]);
 	}
 	else
 	{
-		return ('\0');
+		return (NULL);
 	}
+	return (0);
 }

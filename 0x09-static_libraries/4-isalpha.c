@@ -1,27 +1,19 @@
-#include<stdio.h>
 #include "main.h"
+#include <ctype.h>
 
 /**
- * _isalpha - check for alpha characters.
+ * _isalpha - prints 1 or 0 depending on input
+ * @c: collects a char type
  *
- * @c: area input;
- * Return: 1,0;
+ * Description: Checks for alphabets lower and uppercase
+ * Return: Always(0).
  */
 
 int _isalpha(int c)
 {
-if (/* condition */c >= 'a' && c <= 'z')
-{
-    /* code */
-return (1);
-}
-else if (/* condition */c >= 'A' && c <= 'Z')
-{
-    /* code */
-return (1);
-}
-else
-{
-return (0);
-}
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+	{
+		return (1);
+	}
+	return (0);
 }

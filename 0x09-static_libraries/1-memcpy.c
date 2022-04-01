@@ -1,26 +1,14 @@
-#include <string.h>
 #include "main.h"
 
 /**
- * *_memcpy - fill memory
- * @dest: string1
- * @src: string2
- * @n: input size
+ * _isdigit - 1 if c is a digit
+ * @c: input value
  *
- * Description: function that copies memory area
- * Return: returns the memory area.
+ * Description: checks for a digit (0 through 9).
+ * Return: Always (0).
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+int _isdigit(int c)
 {
-	char *csrc = (char *)src;
-	char *cdest = (char *)dest;
-	unsigned int j;
-
-	for (j = 0; j < n; j++)
-	{
-		/* code */
-		cdest[j] = csrc[j];
-	}
-return (cdest);
+	return (c >= '0' && c <= '9');
 }
