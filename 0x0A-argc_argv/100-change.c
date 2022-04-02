@@ -53,8 +53,11 @@ int main(int argc, char *argv[])
 	
 	n = atoi(argv[1]);
 
-	if (argc != 2 || n < 0)
+	if (argc != 2)
 		return (printf("Error\n"), 1);
+	if ( n < 0)
+		return (printf("0\n"), 1);
+	
 
 	printf("%d\n", calculate_cents(n));
 	return (0);
