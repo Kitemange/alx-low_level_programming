@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
 
 	if (argc != 3)
 	{
-		return(printf("%s\n", "Error"), 1);
+		return(printf ("%s\n", "Error"), 1);
 	}
 	else
 	{
