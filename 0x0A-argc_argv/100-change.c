@@ -50,7 +50,6 @@ int calculate_cents(int num)
 int main(int argc, char *argv[])
 {
 	int n;
-	
 	n = atoi(argv[1]);
 
 	if (argc != 2)
