@@ -3,30 +3,25 @@
 #include "main.h"
 
 /**
- * create_array - creates an array of chars,
- * and initializes it with a specific char
- * @size: input size
- * @c: input character
+ * *_strdup - duplicates a string,
+ * @str: input string
  *
- * Return: a pointer to the array, or NULL if it fails
+ * Return: a pointer to newly allocated memory
  */
 
 char *_strdup(char *str)
 {
-    int i, l = 0;
-    char *duplicate;
+	int i, l = 0;
+	char *duplicate;
 
-    duplicate = malloc(sizeof(char) * (l + 1));
+	duplicate = malloc(sizeof(char) * (l + 1));
 
-    if (str == NULL)
-        return (NULL);
-        
-    for (i = 0; str[i] != '\0'; i++)
-    {
-        duplicate[i] = str[i];
-    }
+	if (str == NULL)
+		return (NULL);
 
-    
-   
-    return (duplicate);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		duplicate[i] = str[i];
+	}
+	return (duplicate);
 }
