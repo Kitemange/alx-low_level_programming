@@ -1,29 +1,73 @@
 #include "main.h"
+#include <stdlib.h>
+#include <math.h>
 
 /**
- * main - multiplies two positive numbers
- * @argc: n arguments
- * @argv: args
- * Return: int
+ * mul - mul two digits.
+ * and value should be in log 10 form
+ * 
  */
-int main(int argc, char *argv[])
+ 
+int mul()
 {
-unsigned long mul;
-int i, j;
-	if (argc != 3)
-	{ printf("Error\n");
-	exit(98); }
-	for (i = 1; i < argc; i++)
+	int a, b, p;
+	if (a >= 0 && b >= 0)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
-		{
-			if (argv[i][j] > 57 || argv[i][j] < 48)
-			{  printf("Error\n");
-			exit(98); }
-		}
+		p = log10(a) * log10(b);
+		a++;
+		b++;
 
+		return (print("%d\n",p));
 	}
-	mul = atol(argv[1]) *  atol(argv[2]);
-	printf("%lu\n", mul);
-return (0);
+	else
+	{
+		print("Error\n");
+		exit(98);
+	}
+}
+
+/**
+ * _atoi_digit - convert a char to integer.
+ * @x: character to convert.
+ * Return: integer.
+ **/
+
+int _atoi_digit(char x)
+{
+	unsigned int res;
+
+	if (x <= '9' && x >= '0')
+		res = x - '0';
+	return (res);
+}
+/**
+ * print_array - print all digits of array.
+ * @nb: number of elements to print.
+ * @a: array of elements.
+ **/
+void print_array(char *a, int nb)
+{
+	int i = 0;
+
+	while (a[i] == '0' && (i + 1) < nb)
+	{
+		i++;
+	}
+	for (; i < nb; i++)
+	{
+		_putchar(a[i]);
+	}
+	_putchar('\n');
+}
+
+/**
+ *main - print the multiplication of 2 numbers.
+ *@argc: array length.
+ *@argv: array.
+ *Return: 0.
+ */
+int main(int argc, char const *argv[])
+{
+	/* code */
+	return 0;
 }
