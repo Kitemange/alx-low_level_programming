@@ -22,13 +22,11 @@ int *array_range(int min, int max)
 	if (min > max || !(p = malloc(sizeof(int) * len)))
 		return (NULL);
 	
-	else if (max == min)
-		len = 2;
+	/*else if (max == min)
+		len = 2;*/
 	
 	for (; min <= max; i++)
 		p[i] = min++;
-	if (max == min)
-		p[i] = max;
 
 	return (p);
 }
