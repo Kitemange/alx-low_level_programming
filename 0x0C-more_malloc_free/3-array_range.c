@@ -21,9 +21,6 @@ int *array_range(int min, int max)
 
 	if (min > max || !(p = malloc(sizeof(int) * len)))
 		return (NULL);
-
-	if (max > min)
-		len = min - max + 1;
 	
 	else if (max == min)
 		len = 2;
