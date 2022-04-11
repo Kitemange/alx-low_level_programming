@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 #include "dog.h"
 
 /**
@@ -17,21 +16,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *new_dog = malloc(sizeof(dog_t));
 
 	if (!new_dog || !name || !owner)
-	{
 		return (NULL);
-	}
+
 	n = malloc(_strlen(name) + 1);
 	if (!n)
-	{
 		return (free(new_dog), NULL);
-	}
 	n = _strdup(name);
 	new_dog->name = n;
 	o = malloc(_strlen(owner) + 1);
 	if (!o)
-	{
 		return (free(new_dog->name), free(new_dog), NULL);
-	}
 	o = _strdup(owner);
 	new_dog->owner = o;
 	new_dog->age = age;
@@ -68,19 +62,13 @@ char *_strdup(char *str)
 	char *copy;
 
 	if (!str)
-	{
 		return (NULL);
-	}
 	len = _strlen(str);
 	copy = malloc(sizeof(char) * len + 1);
 	if (!copy)
-	{
 		return (NULL);
-	}
 	for (i = 0; i < len; i++)
-	{
 		copy[i] = str[i];
-	}
 	copy[i] = 0;
 	return (copy);
 }
