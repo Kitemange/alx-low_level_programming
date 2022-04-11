@@ -3,36 +3,6 @@
 #include "dog.h"
 
 /**
- * new_dog - creates a new dog
- * @name: name of dog
- * @age: age of dog
- * @owner: owner of dog
- * Return: malloced dog_t
- */
-
-dog_t *new_dog(char *name, float age, char *owner)
-{
-	char *n, *o;
-	dog_t *new_dog = malloc(sizeof(dog_t));
-
-	if (!new_dog || !name || !owner)
-		return (NULL);
-
-	n = malloc(_strlen(name) + 1);
-	if (!n)
-		return (free(new_dog), NULL);
-	n = _strdup(name);
-	new_dog->name = n;
-	o = malloc(_strlen(owner) + 1);
-	if (!o)
-		return (free(new_dog->name), free(new_dog), NULL);
-	o = _strdup(owner);
-	new_dog->owner = o;
-	new_dog->age = age;
-	return (new_dog);
-}
-
-/**
  * _strlen - returns the length of a string
  * @s: string s
  * Return: length of string
@@ -48,6 +18,7 @@ int _strlen(char *s)
 	}
 	return (s - p);
 }
+
 
 /**
  * _strdup - returns a pointer to a newly allocated space in memory,
@@ -71,4 +42,36 @@ char *_strdup(char *str)
 		copy[i] = str[i];
 	copy[i] = 0;
 	return (copy);
+}
+
+
+/**
+ * new_dog - creates a new dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
+ * Return: malloced dog_t
+ */
+
+
+dog_t *new_dog(char *name, float age, char *owner)
+{
+	char *i, *j;
+	dog_t *new_dog = malloc(sizeof(dog_t));
+
+	if (!new_dog || !name || !owner)
+		return (NULL);
+
+	i = malloc(_strlen(name) + 1);
+	if (!i)
+		return (free(new_dog), NULL);
+	i = _strdup(name);
+	new_dog->name = i;
+	j = malloc(_strlen(owner) + 1);
+	if (!j)
+		return (free(new_dog->name), free(new_dog), NULL);
+	j = _strdup(owner);
+	new_dog->owner = j;
+	new_dog->age = age;
+	return (new_dog);
 }
