@@ -3,11 +3,15 @@
 #include "dog.h"
 
 /**
- *  * struct dog - dog
- *   * @name: name of the dog
- *    * @age: how old the dog is
- *     * @owner: who owns the dog
- *      */
+ * init_dog - function that initialize a variable of type struct dog
+ * @d: first parameter
+ * @name: second parameter
+ * @age: third parameter
+ * @owner: fourth parameter
+ *
+ * Description: function that initialize a variable of type struct dog
+ * Return: Always(0) Success
+ */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
