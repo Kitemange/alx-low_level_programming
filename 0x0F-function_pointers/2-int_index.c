@@ -2,10 +2,11 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - execute a function pointer on each element of an array
+ * int_index - Function that searches for an integer
  * @array: array of integers
  * @size: size of array
- * @action: function pointer
+ * @cmp: function pointer
+ * Return: index of first element that matches with `cmp`, or -1 if none found
  */
 
 
