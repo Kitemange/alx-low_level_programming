@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-    register int a, b;
+    int a, b;
     int (*p)(int, int);
 
     /*number of arguments is wrong,*/
