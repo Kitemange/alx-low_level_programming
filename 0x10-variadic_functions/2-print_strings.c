@@ -4,9 +4,9 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - prints numbers
- * @separator: character to separe numbers
- * @n: n for number input
+ * print_strings - print strings
+ * @separator: string to be printed between the strings
+ * @n: number of strings passed to the function
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -21,18 +21,18 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		char *str = va_arg(j, char *);
 
 		if (str == NULL)
-        {
-            printf("(nill)");
-        }
+		{
+			printf("(nill)");
+		}
 		else
 		{
 			if (i < (n - 1) && separator != NULL)
 				printf("%s%s", str, separator);
 			else
 				printf("%s", str);
-		}      	
+		}
 	}
-    va_end(j);
+	va_end(j);
 
 	printf("\n");
 }
