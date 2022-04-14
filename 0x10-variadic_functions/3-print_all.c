@@ -21,10 +21,10 @@ void print_char(va_list argptr)
 
 void print_int(va_list argptr)
 {
-	int num1;
+	int num_i;
 
-	num1 = va_arg(argptr, int);
-	printf("%i", num1);
+	num_i = va_arg(argptr, int);
+	printf("%i", num_i);
 }
 
 /**
@@ -33,10 +33,10 @@ void print_int(va_list argptr)
 
 void print_float(va_list argptr)
 {
-	float numf;
+	float num_f;
 
-	numf = va_arg(argptr, double);
-	printf("%f", numf);
+	num_f = va_arg(argptr, double);
+	printf("%f", num_f);
 }
 
 /**
@@ -66,9 +66,9 @@ void print_string(va_list argptr)
 
 void print_all(const char * const format, ...)
 {
-	unsigned int i, j;
 	va_list all;
-	char *z = 0;
+	int i, j;
+	char *z = "";
 
 	/*struct declaration*/
 	prints_t list[] = {
