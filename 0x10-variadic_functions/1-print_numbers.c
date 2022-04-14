@@ -9,26 +9,22 @@
  * Return: total sum
  */
 
-int sum_them_all(const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list list;
-	float sum = 0;
+	va_list P;
 	unsigned int i;
 
-	va_start(list, n);
-
-	if (n == 0)
+	va_start(P, n);
+    
+    for (i = 0; i < n; i++)
 	{
-		return (0);
+        int a = va_arg(P, unsigned int);
+        printf("%d", a);
+
+        if (i != (n - 1) && separator != NULL)
+            printf("%s", separator);
 	}
+    printf("\n");
 
-	for (i = 0; i < n; i++)
-	{
-		int j = va_arg(list, unsigned int);
-		sum += j;
-	}
-
-	va_end(list);
-
-	return (sum);
+	va_end(P);
 }
