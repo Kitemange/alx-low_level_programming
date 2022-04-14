@@ -9,10 +9,10 @@
 
 void print_char(va_list argptr)
 {
-    char ch;
+	char ch;
 
-    ch = va_arg(argptr, int);
-    printf("%c", ch);
+	ch = va_arg(argptr, int);
+	printf("%c", ch);
 }
 
 /**
@@ -66,32 +66,32 @@ void print_string(va_list argptr)
 
 void print_all(const char * const format, ...)
 {
-    unsigned int i, j;
-    va_list all;
-    char *z = 0;
+	unsigned int i, j;
+	va_list all;
+	char *z = 0;
 
-    /*struct declaration*/
-    prints_t list[] = {
-        {"c",print_char},
-        {"i",print_int},
-        {"f",print_float},
-        {"s",print_string}
-    };
+	/*struct declaration*/
+	prints_t list[] = {
+		{"c",print_char},
+		{"i",print_int},
+		{"f",print_float},
+		{"s",print_string}
+	};
 
-    va_start(all, format);
+	va_start(all, format);
 
-    i = 0;
-    while (format != NULL && format[i / 4] != '\0')
-    {
-        j = i % 4;
-        if (list[j].notation[0] == format[i / 4])
-        {
-            printf("%s",z);
-            list[j].print_dType(all);
-            z = ", ";
-        } 
-        i++;
-    }    
-    printf("\n");
-    va_end(all);
+	i = 0;
+	while (format != NULL && format[i / 4] != '\0')
+	{
+		j = i % 4;
+		if (list[j].notation[0] == format[i / 4])
+		{
+			printf("%s",z);
+			list[j].print_dType(all);
+			z = ", ";
+		}
+		i++;
+	}
+	printf("\n");
+	va_end(all);
 }
