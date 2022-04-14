@@ -4,9 +4,9 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - return the sum of all its parameters
- * @n: number of extra params
- * Return: total sum
+ * print_numbers - prints numbers
+ * @separator: character to separe numbers
+ * @n: n for number input
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
