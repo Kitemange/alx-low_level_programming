@@ -11,7 +11,7 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	register unsigned int i;
+	unsigned int i;
 	va_list j;
 
 	va_start(j, n);
@@ -26,7 +26,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			if (i < (n - 1) && separator != NULL)
+			if (i < (n - 1) && separator != 0)
 				printf("%s%s", str, separator);
 			else
 				printf("%s", str);
