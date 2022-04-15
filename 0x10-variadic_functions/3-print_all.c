@@ -72,7 +72,7 @@ void print_all(const char * const format, ...)
 {
 	va_list all;
 	int i, j;
-	char *z = "";
+	char *z;
 
 	/*struct declaration*/
 	prints_t list[] = {
@@ -85,6 +85,7 @@ void print_all(const char * const format, ...)
 	va_start(all, format);
 
 	i = 0;
+	z = "";
 	while (format != NULL && format[i / 4] != '\0')
 	{
 		j = i % 4;
