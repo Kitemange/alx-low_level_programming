@@ -76,10 +76,10 @@ void print_all(const char * const format, ...)
 
 	/*struct declaration*/
 	prints_t list[] = {
-		{"c",print_char},
-		{"i",print_int},
-		{"f",print_float},
-		{"s",print_string}
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string}
 	};
 
 	va_start(all, format);
