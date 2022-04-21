@@ -14,17 +14,18 @@
 
 size_t print_list(const list_t *h)
 {
-    unsigned int len = 0;
-    h = h-> next;
+	unsigned int len = 0;
 
-    while (h)
-    {
-        if (h-> str)
-            printf("[%d] %s\n", h->len, h->str);
-        else
-            return(printf("[0] (nill)\n"));
-        
-        len++;
-    }
-    return (0);
+
+	while (h)
+	{
+		if (h-> str)
+			printf("[%d] %s\n", h->len, h->str);
+		else
+			return(printf("[0] (nill)\n"));
+
+		h = h-> next;
+		len++;
+	}
+	return (0);
 }
