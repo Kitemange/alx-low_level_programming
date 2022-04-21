@@ -5,7 +5,7 @@ start:
 	mov rax, 1
 	mov rdi, 1
 	mov rsi, msg
-	mov rdx, 13
+	mov rdx, msglen
 	syscall
 
 	mov rax, 60
