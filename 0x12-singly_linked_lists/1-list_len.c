@@ -1,21 +1,12 @@
-#include <stdio.h>
 #include "lists.h"
 
 /**
- * print_list - prints elements of a list_t list.
- * @h: The list_t list.
- * Return: The number of nodes in h.
+ * list_len - get the length of a list
+ * @h: address of the first node in the list
+ *
+ * Return: the length of list h
  */
-
 size_t list_len(const list_t *h)
 {
-	unsigned int i = 0;
-
-	while (h != NULL)
-	{
-		/* code */
-		h = h->str;
-		i++;
-	}
-	return (i);
+	return (h ? list_len(h->next) + 1 : 0);
 }
