@@ -1,5 +1,6 @@
 section .data
-    msg db "Hello world!",10      ; 10 is the ASCII code for a new line (LF)
+    msg db "Hello, Holberton",10
+    msglen: equ $ - msg
 
 section .text
     global _start
@@ -14,4 +15,3 @@ _start:
     mov rax, 60
     mov rdi, 0
     syscall
-    
