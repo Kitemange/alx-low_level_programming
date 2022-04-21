@@ -1,5 +1,5 @@
 section .text
-	global _start
+	global start
 
 start:
 	mov rax, 1
@@ -14,4 +14,4 @@ start:
 
 section .data
 	msg db "Hello, Holberton",10
-	msglen: equ $ - msg
+	fmt: db "%s", 10, 0
