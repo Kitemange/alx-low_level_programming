@@ -1,47 +1,51 @@
+#include <stdlib.h>
+#include <string.h>
 #include "lists.h"
 
 /**
- * _strlen - counts the lenght of a string
- * @str: string to be counted
- * Return: len of a string
- */
-
-int _strlen(const char *str)
+  * add_node - Adds a new node at the beginning of a list
+  * @head: The original linked list
+  * @str: The string to add to the node
+  *
+  * Return: The address of the new list or NULL if it failed
+  */
+list_t *add_node(list_t **head, const char *str)
 {
-	int i = 0;
+	list_t *temp;
 
-	while (str[i] != '\0')
+	if (head != NULL && str != NULL)
 	{
-		i++;
+		temp = malloc(sizeof(list_t));
+		if (temp == NULL)
+			return (NULL);
+
+		temp->str = strdup(str);
+		temp->len = _strlen(str);
+		temp->next = *head;
+
+		*head = temp;
+
+		return (temp);
 	}
-	return (i);
+
+	return (0);
 }
 
 /**
- * add_node - adds a node at the beginning
- * @head: first parameter
- * @str: second parameter
- * Return: nodes
- */
-
-list_t *add_node(list_t **head, const char *str)
+  * _strlen - Returns the length of a string
+  * @s: String to count
+  *
+  * Return: String length
+  */
+int _strlen(const char *s)
 {
-	list_t *new;
-    	
-    if (!head)
-		return (NULL);
+	int c = 0;
 
-	new = malloc(sizeof(list_t));
-
-	if (new == NULL)
+	while (*s)
 	{
-		return (NULL);
+		s++;
+		c++;
 	}
-	new->str = strdup(str);
-	new->len = _strlen(str);
-	new->next = *head;
 
-	*head = new;
-
-	return (new);
+	return (c);
 }
