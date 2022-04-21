@@ -4,12 +4,9 @@
 #include "lists.h"
 
 /**
- * struct list_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
- *
- * Description: singly linked list node structure
+ * print_list - prints elements of a list_t list.
+ * @h: The list_t list.
+ * Return: The number of nodes in h.
  */
 
 size_t print_list(const list_t *h)
