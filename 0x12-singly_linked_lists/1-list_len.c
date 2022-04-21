@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -6,6 +7,7 @@
  *
  * Return: the length of list h
  */
+
 size_t list_len(const list_t *h)
 {
 	return (h ? list_len(h->next) + 1 : 0);
