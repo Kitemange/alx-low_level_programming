@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void __attribute__((constructor)) hare(void);
+void __attribute__((constructor)) Tortoise(void);
 
 /**
- * hare - prints a string before the
+ * Tortoise - prints a string before the
  */
 void Tortoise(void)
 {
