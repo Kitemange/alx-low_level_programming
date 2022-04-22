@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void Tortoise (void) __attribute__ ((constructor));
+void Tortoise(void) __attribute__ ((constructor));
 
 /**
  * Tortoise - prints a string before the
