@@ -29,7 +29,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 			free(removeNode);
 			return (1);
 		}
-        /*Otherwise, move the current node and proceed*/
+		/*Otherwise, move the current node and proceed*/
 		tmp = tmp->next;
 		i++;
 	}
