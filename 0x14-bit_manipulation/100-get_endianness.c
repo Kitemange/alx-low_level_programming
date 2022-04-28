@@ -7,14 +7,14 @@
 
 int get_endianness(void)
 {
-    unsigned data = 1;/*Assign data*/
-    unsigned *cptr;
+	unsigned data = 1;/*Assign data*/
+	unsigned *cptr;
 
-    cptr = (unsigned int*)&data; /*Type cast*/
-    if (*cptr == 1)
-        return (1);
-    else if(*cptr == 0)
-        return (0);
-    
-    return (-1);
+	cptr = (unsigned int*)&data; /*Type cast*/
+	if (*cptr == 1)
+		return (1);
+	else if(*cptr == 0)
+		return (0);
+
+	return (-1);
 }
