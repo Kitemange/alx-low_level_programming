@@ -16,7 +16,7 @@ int create_file(const char *filename, char *text_content)
         return (-1);
     fl = open(filename, O_RDWR | O_CREAT | O_TRUNC/*truncates if file exists*/
                 , 0600/*permission*/);
-    if (fl == NULL)
+    if (fl == -1)
         return (-1);
 
     /* condition to loop into text_content */
@@ -25,7 +25,7 @@ int create_file(const char *filename, char *text_content)
         while (text_content[t_len])
             t_len++;
         wr = write(fl, text_content, t_len);
-        if (wr == NULL)
+        if (wr == -1)
         {
             return (-1);
         }        
