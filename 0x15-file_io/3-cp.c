@@ -9,38 +9,41 @@
 
 int main(int argc, char *argv[])
 {
-    int file1, file2, rd, c1, c2;
-    char buffer[1024]; /*read 1,024 bytes at a time from the file_from*/
-    
-    if (argc != 3)
-    {
-        /*output to a file descriptor*/
-        dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-        exit(97);
-    }
-    file1 = open(argv[1], O_RDONLY);
+	int _file1, _file2, _read, c1, c2;
+	char buffer[1024];
 
-    if (rd < 0 || file1 < 0)
-    {
-        /*output to a file descriptor*/
-        dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE", argv[1]);
-        exit(98);
-    }
-    file2 = open(argv[2], O_TRUNC);
-    /*if you can not create or if write to file_to fails*/
-    while ((rd = read(file1, buffer, 1024)) > 0)
+	if (argc != 3)
 	{
-		if (file2 < 0 || (write(file2, buffer, read) != read))
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-            exit(99);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	}
-    c1 = close(file1);
-    if (c1 < 0)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", file1), exit(100);
-
-    c2 = close(file2);
-    if (c2 < 0)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", file2), exit(100);
-    
-    return (0);
+	_file1 = open(argv[1], O_RDONLY);
+	if (_file1 < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
+	_file2 = open(argv[2], O_TRUNC | O_CREAT | O_WRONLY, 0664);
+	while ((_read = read(_file1, buffer, 1024)) > 0)
+	{
+		if (_file2 < 0 || (write(_file2, buffer, _read) != _read))
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+		}
+	}
+	if (_read < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
+	c1 = close(_file1);
+	if (c1 < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", _file1), exit(100);
+	}
+	c2 = close(_file2);
+	if (c2 < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", _file2), exit(100);
+	}
+	return (0);
 }
