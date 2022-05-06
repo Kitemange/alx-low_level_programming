@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	file1 = open(argv[1], O_RDONLY);
 
-	if (rd < 0 || file1 < 0)
+	if (rd < 0)
 	{
 		/*output to a file descriptor*/
 		dprintf(STDERR_FILENO, "Error: Can't read from file ", argv[1]);
@@ -33,6 +33,12 @@ int main(int argc, char *argv[])
 		if (file2 < 0 || (write(file2, buffer, read) != read))
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
+	}
+	if (file1 < 0)
+	{
+		/*output to a file descriptor*/
+		dprintf(STDERR_FILENO, "Error: Can't read from file ", argv[1]);
+		exit(98);
 	}
 	c1 = close(file1);
 	if (c1 < 0)
