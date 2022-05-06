@@ -32,8 +32,10 @@ int main(int argc, char *argv[])
 	while ((rd = read(file1, buffer, 1024)) > 0)
 	{
 		if (file2 < 0 || (write(file2, buffer, read) != read))
+		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
+		}
 	}
 	if (rd < 0)
 	{
